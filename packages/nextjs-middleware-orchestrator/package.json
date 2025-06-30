@@ -1,0 +1,23 @@
+{
+  "name": "nextjs-middleware-orchestrator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/nextjs-middleware-orchestrator.umd.cjs",
+  "module": "./dist/nextjs-middleware-orchestrator.js",
+  "exports": {
+    ".": {
+      "import": "./dist/nextjs-middleware-orchestrator.js",
+      "require": "./dist/nextjs-middleware-orchestrator.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0"
+  }
+}
