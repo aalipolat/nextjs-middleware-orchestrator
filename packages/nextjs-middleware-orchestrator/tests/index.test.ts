@@ -4,6 +4,9 @@
 // Import unit tests
 import './unit/index.test';
 
+// Import integration tests
+import './integration/orchestrator.test';
+
 // This ensures that all tests are discovered and run
 import { describe, it, expect } from 'vitest';
 
