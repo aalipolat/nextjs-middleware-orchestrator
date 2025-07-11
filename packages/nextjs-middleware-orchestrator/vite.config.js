@@ -16,7 +16,7 @@ export default defineConfig({
       fileName: 'nextjs-middleware-orchestrator',
     },
     rollupOptions: {
-      external: [ 'next' ],
+      external: ['next'],
       output: {
         globals: {
           'next': 'Next'
@@ -24,4 +24,15 @@ export default defineConfig({
       }
     },
   },
+  test: {
+    include: ['tests/**/*.{test,spec}.ts'],
+    environment: 'node',
+    setupFiles: ['./tests/setup.ts'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**/*.ts'],
+      exclude: ['src/interfaces/**', 'src/types/**']
+    }
+  }
 })
