@@ -14,7 +14,9 @@ export default defineConfig({
         'tests/',
         '**/*.d.ts',
         '**/*.config.*',
-        '**/setup.ts'
+        '**/setup.ts',
+        'src/interfaces/**',
+        'src/types/**'
       ],
       thresholds: {
         global: {
